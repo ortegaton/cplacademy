@@ -116,6 +116,13 @@ class course_edit_form extends moodleform {
             }
         }
 
+
+	$choices = array();
+        $choices['online'] = 'Online';
+        $choices['offline'] = 'Face to Face';
+        $mform->addElement('select', 'coursetype', 'Course Type', $choices);
+        $mform->setDefault('coursetype', 'online');
+
         $mform->addElement('date_selector', 'startdate', get_string('startdate'));
         $mform->addHelpButton('startdate', 'startdate');
         $mform->setDefault('startdate', time() + 3600 * 24);
