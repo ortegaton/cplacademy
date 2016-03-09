@@ -16,6 +16,7 @@ JOIN prefix_user AS u ON p.userid = u.id
 JOIN prefix_user_info_data AS d ON u.id = d.userid,(SELECT @rownum := 5000) as r, prefix_course_numbers as cn 
 WHERE c.enablecompletion = 1 AND d.fieldid = 4 AND d.data <> '' AND c.id <> '' AND p.timecompleted <> '' AND c.id=cn.courseid
 AND c.coursetype = 'online'
+AND c.idnumber <> ''
 AND FROM_UNIXTIME(p.timecompleted, '%m') = cn.month 
 AND FROM_UNIXTIME(p.timecompleted, '%Y') = cn.year
 )
