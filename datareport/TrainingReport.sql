@@ -15,7 +15,9 @@ JOIN prefix_user AS u ON p.userid = u.id
 JOIN prefix_user_info_data AS d ON u.id = d.userid,(SELECT @rownum := 5000) as r, prefix_course_numbers as cn 
 WHERE c.enablecompletion = 1 AND d.fieldid = 4 AND d.data <> '' AND c.id <> '' AND p.timecompleted <> '' AND c.id=cn.courseid
 AND c.coursetype = 'online'
-AND cn.year = YEAR(CURDATE()))
+AND FROM_UNIXTIME(p.timecompleted, '%m') = cn.month 
+AND FROM_UNIXTIME(p.timecompleted, '%Y') = cn.year
+)
 UNION ALL
 (SELECT
 from_unixtime(sd.timestart, '%Y') as 'year',
@@ -50,6 +52,7 @@ LEFT JOIN prefix_facetoface_session_data strain on ss.id = strain.sessionid and 
 LEFT JOIN prefix_facetoface_session_data sloc on ss.id = sloc.sessionid and sloc.fieldid = 1
 JOIN prefix_user_info_data d ON sup.userid = d.userid and d.fieldid = 4
 WHERE st.superceded = 0 AND st.statuscode >= 80
+AND c.idnumber <> ''
 AND d.data <> '')
 ORDER BY uniquenum
 
