@@ -1,0 +1,10 @@
+/* CSS Document */
+.mis_header {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	border-bottom: #000 thin solid;	
+}
+.mis_septitle {
+	font-size: 10px;
+	font-weight: bold;
+}

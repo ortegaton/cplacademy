@@ -1,0 +1,17 @@
+#themeuikit-slideshow .uk-cover-background {
+    background-size: [[setting:slideshowsizingmode]];
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#themeuikit-slideshow h2 {
+	color: [[setting:slideshowtitlecolor]];
+}
+
+#themeuikit-slideshow p {
+	color: [[setting:slideshowcaptioncolor]];
+}
+
+#themeuikit-slideshow .uk-slidenav.uk-slidenav-contrast {
+	color: [[setting:slideshowarrowscolor]];
+}

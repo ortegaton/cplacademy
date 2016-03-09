@@ -1,0 +1,29 @@
+.zilink_box_left {
+    
+    width: 45%;
+    float: left;
+
+}
+
+.zilink_box_right {
+    
+    width: 45%;
+    float: right;
+
+}
+
+.zilink_search {
+
+    margin-left: 0px;
+    padding: 0px;
+}
+
+.mform .fitem div.fitemtitle {
+    
+    width: 0px;
+}
+
+.mform .fitem .felement {
+    
+    margin: 0px;
+}

@@ -1,0 +1,105 @@
+/*
+// This file is part of local_checkmarkreport for Moodle - http://moodle.org/
+//
+// It is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// It is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/**
+ * CSS for checkmarkreport
+ *
+ * @package       local_checkmarkreport
+ * @author        Andreas Hruska (andreas.hruska@tuwien.ac.at)
+ * @author        Katarzyna Potocka (katarzyna.potocka@tuwien.ac.at)
+ * @author        Philipp Hager
+ * @copyright     2014 Academic Moodle Cooperation {@link http://www.academic-moodle-cooperation.org}
+ * @license       http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+/** General Styles **/
+.path-local-checkmarkreport div.scrollforced {
+    width:100%;
+    overflow-x:scroll;
+}
+
+.path-local-checkmarkreport span.downloadlink {
+    margin-left:1em;
+    margin-right:1em;
+    margin-bottom:2em;
+}
+
+.path-local-checkmarkreport #checkmarkreporttable table .hiddencol .hidecol,
+.path-local-checkmarkreport #checkmarkreporttable table .showcol,
+.path-local-checkmarkreport #checkmarkreporttable table .hiddencol .content {
+    display:none !important; /* We have to overwrite clean-themes styles here to hide column*/
+}
+
+.path-local-checkmarkreport #checkmarkreporttable table .hiddencol .showcol,
+.path-local-checkmarkreport #checkmarkreporttable table .hidecol,
+.path-local-checkmarkreport #checkmarkreporttable table .content {
+    display:inline !important;
+    white-space:nowrap;
+}
+
+.path-local-checkmarkreport #checkmarkreporttable table .hiddencol {
+    margin:0px;
+    padding:0px;
+}
+
+.path-local-checkmarkreport #checkmarkreporttable table .hidecol {
+    margin-left:3px;
+}
+
+.path-local-checkmarkreport #checkmarkreporttable table.userview th.cell {
+    text-align:center;
+}
+
+.path-local-checkmarkreport #checkmarkreporttable table,
+.path-local-checkmarkreport #checkmarkreporttable table th,
+.path-local-checkmarkreport #checkmarkreporttable table td {
+    border: 1px solid #BBB;
+}
+
+.path-local-checkmarkreport #checkmarkreporttable table .r0 {
+    background-color: #f0f0f0;
+    white-space:nowrap
+}
+
+.path-local-checkmarkreport #checkmarkreporttable table .r1 {
+    background-color: #fafafa;
+    white-space:nowrap
+}
+
+.path-local-checkmarkreport #checkmarkreporttable table td {
+    text-align:center;
+}
+
+.path-local-checkmarkreport #checkmarkreporttable table td.fullnameuser,
+.path-local-checkmarkreport #checkmarkreporttable table td.email {
+    text-align:left;
+}
+
+.path-local-checkmarkreport #checkmarkreporttable .overview .current,
+.path-local-checkmarkreport #checkmarkreporttable .useroverview .current {
+    background: #f3e4c0;
+}
+
+.path-local-checkmarkreport #checkmarkreporttable .yui3-overlay {
+    background-color: #ffee69;
+    border-color: #d4c237 #a6982b #a6982b;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 0.7em;
+    left: 0;
+    padding: 2px 5px;
+}

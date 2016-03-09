@@ -1,0 +1,57 @@
+.tableleft
+{
+    float: left;
+    margin-left: 5%;
+}
+
+.guardian_view
+{
+    margin-left: 5%;
+}
+
+.cell
+{
+    vertical-align:middle;
+}
+
+.zilink_guardian_view_table
+{
+    float: left;
+}
+
+.zilink_guardian_view_table_small_left
+{
+    float: left;
+}
+
+.zilink_guardian_view_table_small_right
+{
+    float: right;
+}
+
+.rotate{
+    
+    float:left;
+    text-align: center;
+    margin-left: 130px;
+    height:300px;
+    -webkit-transform: rotate(270deg);    
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.zilink_chart {
+    
+    margin: 10px 0px 10px 40px;
+    width: 600px; 
+    height: 300px; 
+}
+
+.zilink_table_width {
+    
+    border: 0px;
+    width: 100%;
+    min-width: 700px;
+}

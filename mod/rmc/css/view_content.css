@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+
+.row-fluid:after {
+    clear: none;
+}
+
+.thumb_large img {
+    width: 100%;
+    border: 5px solid #EEE;
+    float: right;
+    margin-right: 14%;
+}

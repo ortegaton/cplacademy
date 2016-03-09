@@ -1,0 +1,283 @@
+IMPORTANT NOTICE: Please read carefully before installing the VET Commons
+
+plugin (aka the RMC Plugin).
+
+The latest version of this document can be found at http://bit.ly/vetc-terms
+
+and any changes supercede the version below.
+
+====
+
+This agreement (the “Agreement”) is a legal agreement between your institution/
+
+organisation (the “ORGANISATION”) and eWorks, whose principal administrative 
+
+offices are at Level 5, 437 St Kilda Road Melbourne VIC 3004 ("eWorks"), for this 
+
+plugin which includes RMC Plugin code, the data supplied with it, the associated media, 
+
+learning resources and online or electronic content (“Content”). 
+
+BY DOWNLOADING THE PLUGIN YOU CONFIRM THAT YOU HAVE
+
+AUTHORITY TO ACCEPT THESE TERMS ON BEHALF OF THE ORGANISATION IF THE
+
+ORGANISATION DOES NOT AGREE TO THE TERMS OF THIS AGREEMENT, EWORKS IS 
+
+UNWILLING TO GRANT THE RIGHT TO USE THE PLUGIN TO THE ORGANISATION AND 
+
+YOU MUST DISCONTINUE THE DOWNLOAD OR INSTALLATION OF THE PLUGIN
+
+NOW IT IS HEREBY AGREED AS FOLLOWS
+
+1. GRANT
+
+1.1 In consideration of the ORGANISATION agreeing to abide by the terms of this 
+
+Agreement, EWORKS grants to the ORGANISATION a limited, non-exclusive, non-
+
+transferable right to install the RMC Plugin in the ORGANISATION’s Moodle and to use 
+
+the Plugin for the sole purpose of it’s intended use, to access, search and use ready-made 
+
+content. 
+
+2. USE OF THE RMC PLUGIN
+
+2.1 The RMC Plugin shall be used for its intended purposes only. The ORGANISATION 
+
+will not allow and will not itself reverse engineer, manufacture, sell or sub licence for 
+
+manufacture and sale upon a commercial basis the RMC Plugin, incorporate it into 
+
+other Plugins, software or products or use the RMC Plugin other than herein expressly 
+
+specified, in Moodle. 
+
+2.2 The ORGANISATION will ensure that access to the RMC Plugin is restricted to 
+
+those ORGANISATION employees who reasonably have need for such access for use as 
+
+permitted hereunder and that such employees are aware of the undertakings set out in 
+
+this Agreement. The plugin is not designed for a learner to access only to consume.
+
+2.3 The ORGANISATION agrees that it will not allow and will not itself translate, alter, 
+
+decompile, disassemble, reverse engineer, reverse compile, attempt to derive, or 
+
+reproduce source code from the RMC Plugin. The ORGANISATION also agrees that it will 
+
+not remove any copyright or other proprietary or product identification notices from 
+
+RMC Plugin.
+
+2.4 The ORGANISATION confirms that if any underlying software is required to operate 
+
+the RMC Plugin then the ORGANISATION shall be solely responsible for obtaining such 
+
+licences at its own expense.
+
+2.5 To the extent that it is able EWORKS agrees to provide the ORGANISATION with 
+
+any updates and patches to the RMC Plugin and limited support however it does not 
+
+guarantee that it will be able to do so.
+
+2.6 EWORKS retains all right, title and interest in and to the RMC Plugin, the related 
+
+source code, and any and all associated patents, copyrights, and other intellectual 
+
+property rights and nothing in this Agreement shall operate to transfer the same to the 
+
+ORGANISATION or any other third party. 
+
+2.7 In the event that the ORGANISATION wishes to exploit or use the VET Commons 
+
+RMC Plugin distribution on a commercial basis then contact EWORKS about publishing, 
+
+at EWORKS's discretion, a channel can be obtained. 
+
+2.8 You acknowledge that all information, text, graphics, logos, photographs, 
+
+images, moving images, sound, illustrations and other materials (“the Content”), 
+
+is available as a service of VET Commons, that some content will be chargeable 
+
+and that payment will be made for the use of the content. 
+
+We do not control or endorse the Content and cannot guarantee the accuracy, 
+
+integrity or quality of such Content.
+
+eWorks will not be liable in any way for any Content or for any loss or damage of 
+
+any kind resulting from the use of any Content transmitted via the Services and 
+
+you agree to bear all risks associated with the use of any Content, including any 
+
+reliance on the accuracy or completeness of such Content.
+
+2.9 Nothing contained herein shall be construed as granting any licence under any 
+
+intellectual property rights vested in EWORKS or any right to use the RMC Plugin or any 
+
+EWORKS information other than herein expressly specified.
+
+2.10 The ORGANISATION will not provide, or otherwise make available (including 
+
+by loading the RMC Plugin onto the Internet or any network or system), the plugin 
+
+in any form, in whole or in part (including but not limited to, program listings, object 
+
+and source program listings, object code and source code) to any third party without 
+
+EWORKS’s prior written consent. 
+
+3 Copyright 
+
+3.1 Some material contained within this plugin may be subject to copyright under the 
+
+Act. Any further reproduction or communication of said materials by you may be the 
+
+subject of copyright protection under the Act. The publishing of any data, information, 
+
+material or communication of any type by you will not breach or infringe upon the 
+
+intellectual property rights of any third party whatsoever.
+
+3.2 You will not, without eWorks or said publishers written consent print, copy, 
+
+remove branding from, distribute or provide copies of any published items that breach 
+
+copyright
+
+4. WARRANTIES/LIABILITIES
+
+4.1 Nothing in this Agreement shall exclude or in any way limit EWORKS’s liability to the
+
+ORGANISATION for fraud, or for death and personal injury caused by EWORKS’s 
+
+negligence, or any other liability to the extent that it cannot be excluded or limited as a 
+
+matter of law.
+
+4.2 Both parties understand and agree that the RMC Plugin is provided “as is” without 
+
+warranty of merchantability or fitness for a particular purpose or any other warranty, 
+
+express or implied, and without any representation or warranty that the use or supply 
+
+of the RMC Plugin will not infringe any patent, copyright, trademark or other right.
+
+4.3 In no event shall EWORKS be liable for any use or the results of any use by 
+
+the ORGANISATION of the RMC Plugin transferred under this Agreement. The 
+
+ORGANISATION agrees to indemnify and hold harmless EWORKS for any loss, claim, 
+
+damage, or liability, of whatsoever kind or nature, which may arise from, or in 
+
+connection with this Agreement or the use, handling or storage of the RMC Plugin and 
+
+content by the ORGANISATION
+
+5. TERM AND TERMINATION
+
+5.1 This Agreement shall come into force as soon as the VET Commons RMC plugin is 
+
+downloaded and shall remain in force for as long as the ORGANISATION has possession 
+
+of the RMC Plugin pursuant to the terms herein.
+
+5.2 Either the ORGANISATION or EWORKS may terminate this Agreement forthwith 
+
+by notice in writing if the other party commits a substantial breach of this Agreement 
+
+which in the case of a breach capable of remedy will not have been remedied within 
+
+thirty (30) days of the receipt by the party in default of notice identifying the breach and 
+
+requiring its remedy.
+
+5.3 The EWORKS may terminate this Agreement forthwith by notice in writing to the 
+
+ORGANISATION if the ORGANISATION enters into liquidation whether compulsory 
+
+or voluntarily or compounds with or convenes a meeting of its creditors or has a 
+
+receiver appointed over all or part of its assets or takes or suffers any similar actions in 
+
+consequences of a debt or ceases for any reason to carry on business.
+
+5.4 EWORKS may terminate this Agreement at any time upon written notice if EWORKS 
+
+is unable to supply the RMC Plugin to the ORGANISATION.
+
+5.5 Either party shall have the right to terminate this Agreement for any reason, with or 
+
+without cause, such termination to be effective ten (10) days following the date notice is 
+
+given.
+
+5.6 Upon the termination of this Agreement for any reason, the ORGANISATION will 
+
+cease using the RMC Plugin and documentation and delete it from all storage media and 
+
+destroy all copies made.
+
+5.7 The termination of this Agreement for whatever reason will not affect the 
+
+accrued rights of the parties arising in any way out of this Agreement as at the date of 
+
+termination. The obligations under Clause 2, 3 and 4 will survive any such termination.
+
+6. ASSIGNMENT
+
+6.1 The ORGANISATION will not assign or transfer this Agreement or the RMC Plugin to 
+
+any third party without the prior written consent of EWORKS.
+
+7. GENERAL PROVISIONS
+
+7.1 SEVERABILITY OF PROVISIONS
+
+If any provision of this Agreement is declared void or unenforceable by any judicial or 
+
+administrative authority this will not ipso facto nullify the remaining provisions of this
+
+Agreement and the provision of this Agreement so affected will be curtailed and limited 
+
+only to the extent necessary to bring it within the legal requirements.
+
+7.2 FORCE MAJEURE
+
+No Failure or omission by either party to carry out or to observe any of the terms or 
+
+conditions of this Agreement will give rise to any claim against the party in question or 
+
+be deemed a breach of this Agreement if such failure or omission arises from any cause 
+
+beyond the reasonable control of that party.
+
+7.3 ENTIRE AGREEMENT
+
+This Agreement embodies the entire agreement between the parties hereto as to 
+
+the subject matter hereof and merges all prior discussions and no provision of this 
+
+Agreement may be changed except by the written mutual consent of the parties hereto.
+
+7.6 GOVERNING LAW AND JURISDICTION
+
+The validity, construction and performance of this Agreement will be governed by 
+
+Australian Law and the parties submit to the exclusive jurisdiction of the Australian 
+
+Courts in the event of any dispute.
+
+Further information
+
+If you require further clarification in regard to these terms & conditions please contact 
+
+eWorks enquiries@eworks.edu.au

@@ -1,0 +1,38 @@
+.timetable{
+height:40px;
+}
+
+.timetable .unit{
+height:16pt;
+margin-left:-1px;
+}
+
+.timeline{
+height:16pt;
+}
+
+
+.daycellhead{
+height:16pt;
+}
+
+.dayrow .daycell {
+height:55pt;
+}
+
+.staggered .dayrow .daycell {
+height:100pt;
+}
+
+.dayrowevents{
+height:55pt;
+}
+
+.timetable .dayrow{
+height:55pt;
+}
+
+.staggered .dayrow{
+height:100pt;
+}
+

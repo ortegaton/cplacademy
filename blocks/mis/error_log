@@ -1,0 +1,9 @@
+[18-Sep-2015 04:11:52 UTC] PHP Notice:  Undefined property: stdClass::$wwwroot in /home/cplacade/public_html/sandox/config.php on line 35
+[18-Sep-2015 04:11:52 UTC] PHP Notice:  Undefined property: stdClass::$cmisDBServer in /home/cplacade/public_html/sandox/blocks/mis/lib/lib_facility_db.php on line 153
+[18-Sep-2015 04:11:52 UTC] PHP Notice:  Undefined property: stdClass::$cmisDB in /home/cplacade/public_html/sandox/blocks/mis/lib/lib_facility_db.php on line 153
+[18-Sep-2015 04:11:52 UTC] PHP Notice:  Use of undefined constant ODBC_BINMODE_RETURN - assumed 'ODBC_BINMODE_RETURN' in /home/cplacade/public_html/sandox/lib/adodb/adodb.inc.php on line 4333
+[18-Sep-2015 04:11:52 UTC] PHP Notice:  Use of undefined constant SQL_CUR_USE_DRIVER - assumed 'SQL_CUR_USE_DRIVER' in /home/cplacade/public_html/sandox/lib/adodb/adodb.inc.php on line 4333
+[18-Sep-2015 04:11:52 UTC] PHP Notice:  Undefined property: stdClass::$cmisDBServer in /home/cplacade/public_html/sandox/blocks/mis/lib/lib_facility_db.php on line 169
+[18-Sep-2015 04:11:52 UTC] PHP Notice:  Undefined property: stdClass::$cmisDB in /home/cplacade/public_html/sandox/blocks/mis/lib/lib_facility_db.php on line 169
+[18-Sep-2015 04:12:04 UTC] PHP Notice:  Undefined property: stdClass::$wwwroot in /home/cplacade/public_html/sandox/config.php on line 35
+[18-Sep-2015 04:12:09 UTC] PHP Notice:  Undefined property: stdClass::$wwwroot in /home/cplacade/public_html/sandox/config.php on line 35

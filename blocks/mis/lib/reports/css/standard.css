@@ -1,0 +1,142 @@
+    html *{
+        font-family:verdana, arial, tahoma, serif;
+    }
+    h1,h2,h3,h4,h5,h6{
+        color:#35c;
+    }
+    h1{
+        font-size:14pt;
+    }
+    h2{
+        font-size:12pt;
+    }    
+    h3{
+        font-size:10pt;
+    }        
+    h4{
+        font-size:8pt;
+    }            
+    h5{
+        font-size:7pt;
+    }                
+    h6{
+        font-size:6pt;
+    }                  
+    table.epExt_table, table.epExt_table tr, table.epExt_table tr td, table.epExt_table tr th{
+        font-family:verdana, arial, tahoma, serif;
+        font-size:8pt;
+        border-collapse:collapse;
+        border:1px solid #bbb;  
+    }
+    
+    table.epExt_table tr th{
+        background-color:#2A55FF;
+        color:#fff;
+    }
+    
+    table.epExt_table tr td, table.epExt_table tr th{
+        padding:2px 2px 2px 2px;
+    }
+    
+    table.epExt_table caption{
+        font-weight:bold;
+        margin-bottom:20px;
+    }
+    
+    .graphs{
+        position:relative;
+        margin 0 auto;
+    }
+    
+    .graphs div{
+        position:relative;
+        float:left;
+    }
+    
+    .clearer{
+        position:relative;
+        clear:both;
+        font-size:1px;
+        line-height:1px;
+        margin-top:-1px;
+    }
+
+
+
+table {
+font-family:tahoma, verdana, helvetica, arial;
+font-size: 9pt;
+border:1px solid #fff;
+}
+
+
+tr{
+min-height:20px;
+}
+
+td{
+padding:2px 4px 2px 4px;
+border:1px solid #fff;
+}
+
+th {
+padding:2px 4px 2px 4px;
+border:1px solid #fff;
+background-color:#2E65D0;
+color:#fff;
+}
+
+.nested tr th{
+font-size: 8pt;
+margin: 0px 0px 0px 0px!important;
+border:0px none transparent !important;
+}
+
+.rowAlt0{
+background-color:#eee;
+}
+.rowAlt1{
+background-color:#ddd;
+}
+
+.scrTabContOuter{
+border:1px solid #aaa;
+background-color:#ccc;
+}
+
+.scrTabZoneBody{
+border-left:2px solid #333;
+}
+
+.scrTabZoneTop{
+border-left:2px solid #333;
+}
+
+caption{
+font-size: 8pt;
+font-weight:bold;
+color:#5533ff;
+padding-bottom:4px;
+}
+
+
+a .button{
+text-align:center !important;
+}
+
+
+a.fileLink{
+padding-left:20px;
+padding-top:4px;
+background-position:0px;
+background-repeat:no-repeat;
+}
+
+a.ext_xls{
+background-image:url('images/file_xls.png');
+}
+
+label{
+margin-right:4px;
+}
+

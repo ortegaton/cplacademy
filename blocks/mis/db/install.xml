@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="blocks/student_info/db" VERSION="20081106" COMMENT="XMLDB file for Moodle student_info block"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="block_mis_report_cache" COMMENT="mis_report_cache table retrofitted from MySQL" NEXT="block_mis_assessment_sets">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="11" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"  NEXT="reportname"/>
+        <FIELD NAME="reportname" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"  PREVIOUS="id" NEXT="args"/>
+        <FIELD NAME="args" TYPE="text" LENGTH="medium" NOTNULL="true" SEQUENCE="false"  PREVIOUS="reportname" NEXT="cached"/>
+        <FIELD NAME="cached" TYPE="text" LENGTH="big" NOTNULL="true" SEQUENCE="false"  PREVIOUS="args" NEXT="datecached"/>
+        <FIELD NAME="datecached" TYPE="datetime" NOTNULL="true" SEQUENCE="false"  PREVIOUS="cached"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" COMMENT="Primary key for mis_report_cache"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="reportname" UNIQUE="false" FIELDS="reportname" COMMENT="Default comment for the index, please edit me"/>
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="block_mis_assessment_sets" COMMENT="configuration of sets" PREVIOUS="block_mis_report_cache" NEXT="block_mis_assessment_crit">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"  COMMENT="id of the table, please edit me" NEXT="setid"/>
+        <FIELD NAME="setid" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"  COMMENT="mis set id" PREVIOUS="id" NEXT="display"/>
+        <FIELD NAME="display" TYPE="int" LENGTH="1" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"  COMMENT="show this set" PREVIOUS="setid"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" COMMENT="primary key of the table, please edit me"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="setid" UNIQUE="true" FIELDS="setid" COMMENT="data set id"/>
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="block_mis_assessment_crit" COMMENT="assessment criteria" PREVIOUS="block_mis_assessment_sets" NEXT="block_mis_assessment_exa">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"  COMMENT="id of the table, please edit me" NEXT="setid"/>
+        <FIELD NAME="setid" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"  COMMENT="char reference back to set row" PREVIOUS="id" NEXT="assessid"/>
+        <FIELD NAME="assessid" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false"  PREVIOUS="setid" NEXT="mapval"/>
+        <FIELD NAME="mapval" TYPE="int" LENGTH="10" NOTNULL="false" UNSIGNED="true" SEQUENCE="false"  PREVIOUS="assessid" NEXT="label"/>
+        <FIELD NAME="label" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"  PREVIOUS="mapval" NEXT="labelcustom"/>
+        <FIELD NAME="labelcustom" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false"  PREVIOUS="label" NEXT="display"/>
+        <FIELD NAME="display" TYPE="int" LENGTH="1" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"  PREVIOUS="labelcustom"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" COMMENT="primary key of the table, please edit me"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="setid" UNIQUE="false" FIELDS="setid" COMMENT="data set id" NEXT="assessid"/>
+        <INDEX NAME="assessid" UNIQUE="false" FIELDS="assessid" COMMENT="assessment id" PREVIOUS="setid"/>
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="block_mis_assessment_exa" COMMENT="assessment exams" PREVIOUS="block_mis_assessment_crit" NEXT="block_mis_assessment_exyrs">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"  COMMENT="id of the table, please edit me" NEXT="examid"/>
+        <FIELD NAME="examid" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"  PREVIOUS="id" NEXT="setid"/>
+        <FIELD NAME="setid" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"  PREVIOUS="examid" NEXT="assessid"/>
+        <FIELD NAME="assessid" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"  PREVIOUS="setid" NEXT="name"/>
+        <FIELD NAME="name" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"  COMMENT="name for exam" PREVIOUS="assessid" NEXT="namecustom"/>
+        <FIELD NAME="namecustom" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false"  COMMENT="custom name for exam" PREVIOUS="name"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" COMMENT="primary key of the table, please edit me"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="examid" UNIQUE="false" FIELDS="examid" COMMENT="assessment instance id" NEXT="setid"/>
+        <INDEX NAME="setid" UNIQUE="false" FIELDS="setid" COMMENT="data set id" PREVIOUS="examid" NEXT="assessid"/>
+        <INDEX NAME="assessid" UNIQUE="false" FIELDS="assessid" COMMENT="assessment id" PREVIOUS="setid"/>
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="block_mis_assessment_exyrs" COMMENT="exam years" PREVIOUS="block_mis_assessment_exa">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"  COMMENT="id of the table, please edit me" NEXT="setid"/>
+        <FIELD NAME="setid" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"  PREVIOUS="id" NEXT="assessid"/>
+        <FIELD NAME="assessid" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"  PREVIOUS="setid" NEXT="examid"/>
+        <FIELD NAME="examid" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"  PREVIOUS="assessid" NEXT="year"/>
+        <FIELD NAME="year" TYPE="int" LENGTH="2" NOTNULL="true" UNSIGNED="false" SEQUENCE="false"  COMMENT="year group to include or exclude" PREVIOUS="examid" NEXT="display"/>
+        <FIELD NAME="display" TYPE="int" LENGTH="1" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false"  COMMENT="is this year included" PREVIOUS="year" NEXT="displayfrom"/>
+        <FIELD NAME="displayfrom" TYPE="int" LENGTH="10" NOTNULL="false" UNSIGNED="true" SEQUENCE="false"  COMMENT="unix timestamp" PREVIOUS="display" NEXT="displayto"/>
+        <FIELD NAME="displayto" TYPE="int" LENGTH="10" NOTNULL="false" UNSIGNED="true" SEQUENCE="false"  COMMENT="unix time stamp" PREVIOUS="displayfrom"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" COMMENT="primary key of the table, please edit me"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="setid" UNIQUE="false" FIELDS="setid" COMMENT="data set id" NEXT="assessid"/>
+        <INDEX NAME="assessid" UNIQUE="false" FIELDS="assessid" COMMENT="assessment id" PREVIOUS="setid" NEXT="examid"/>
+        <INDEX NAME="examid" UNIQUE="false" FIELDS="examid" COMMENT="assessment instance id" PREVIOUS="assessid" NEXT="year"/>
+        <INDEX NAME="year" UNIQUE="false" FIELDS="year" COMMENT="year grp associated with assessment instance" PREVIOUS="examid"/>
+      </INDEXES>
+    </TABLE>
+  </TABLES>
+</XMLDB>

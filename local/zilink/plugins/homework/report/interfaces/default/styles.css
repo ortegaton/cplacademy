@@ -1,0 +1,78 @@
+.mform fieldset.hidden {
+    padding: 0;
+    margin: 0px 0px 0px 0px;  /* give a small bottom margin */
+}
+
+.mform fieldset.hidden div {
+    margin: 0;
+}
+
+div.felement.fgroup {
+    text-align: center;
+}
+
+.mform .fitem .felement {
+    margin: 0;
+    width: 100%;
+}
+
+td.cell.c1 {
+    text-align: center;
+    vertical-align: middle;
+}
+td.cell.c2 {
+    text-align: center;
+    vertical-align: middle;
+}
+td.cell.c3 {
+    text-align: center;
+    vertical-align: middle;
+}
+td.cell.c4 {
+    text-align: center;
+    vertical-align: middle;
+}
+.stselect 
+{
+    width:100%;
+    padding:0;
+    margin: auto;
+}
+
+.pupil-name
+{
+    display:table-cell;
+    border:1px solid;
+    border-bottom:2px solid;
+    padding:10px;
+    font-family:Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size:11px;
+    font-weight:bold;
+    border-color:#CCCCCC;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.pupil-signoff
+{
+    display:table-cell;
+    padding:10px;
+    border-style:solid;
+    border-width:1px;
+    border-color:#CCCCCC;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.zilink_report_update_progress {
+    visibility: hidden;
+    width: 0px;
+}
+
+div .mform .fitem .fitemtitle {
+    width: 0px !important;
+}
+
+div .mform .fitem .felement {
+    margin-left: 0px !important;
+}

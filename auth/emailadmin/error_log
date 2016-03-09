@@ -1,0 +1,6 @@
+[04-Sep-2015 00:02:17 UTC] PHP Notice:  Undefined property: stdClass::$wwwroot in /home/cplacade/public_html/sandox/config.php on line 35
+[04-Sep-2015 00:11:11 UTC] PHP Notice:  Undefined property: stdClass::$wwwroot in /home/cplacade/public_html/sandox/config.php on line 35
+[17-Sep-2015 03:42:04 UTC] PHP Notice:  Undefined property: stdClass::$wwwroot in /home/cplacade/public_html/sandox/config.php on line 35
+[17-Sep-2015 04:18:19 UTC] PHP Notice:  Undefined property: stdClass::$wwwroot in /home/cplacade/public_html/sandox/config.php on line 35
+[17-Sep-2015 04:55:55 UTC] PHP Notice:  Undefined property: stdClass::$wwwroot in /home/cplacade/public_html/sandox/config.php on line 35
+[17-Sep-2015 04:56:14 UTC] PHP Notice:  Undefined property: stdClass::$wwwroot in /home/cplacade/public_html/sandox/config.php on line 35

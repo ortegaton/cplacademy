@@ -1,0 +1,346 @@
+//Use full page height:
+html, body {
+    height: 100%;
+}
+
+/**
+ * First layout specific styles (grid based)
+ */
+body.layout1 {
+    //This part is for re-ordering course columns for small devices in layout 1 (grid based) so the course content appears before left sidebar, since this section uses full device width
+    @media only screen and (max-width: @mdl-maxwidth-singlecolumn), only screen and (max-device-width: @mdl-maxwidth-singlecolumn){
+        #pre-and-content{
+            .flexit(column);
+
+            #region-main-uikit {
+                .box-order(1);
+                float: none;
+            }
+            
+            .content-pre {
+                .box-order(2);
+                float: none;
+            }
+
+            #block-region-side-pre {
+                .box-order(2);
+                float: none;
+            }
+        }
+    }
+}
+
+body.layout2 {
+    //This part is for re-ordering course columns for small devices in layout 2 (flex based) so the course content appears after left sidebar, but left sidebar is initially hidden with an accordion toggle for navigation
+    @media only screen and (max-width: @mdl-maxwidth-singlecolumn), only screen and (max-device-width: @mdl-maxwidth-singlecolumn){
+        #pre-and-content{
+            .boxit(vertical);
+            .flexit(column);
+
+            #region-main-uikit {
+                .box-order(2);
+                float: none;
+            }
+
+            #block-region-side-pre, .content-pre {
+                .box-order(2);
+                float: none;
+            }
+        }
+    }
+    
+    //Header:
+	#headerlogo {
+		font-size: 2.5em;
+	}
+	
+	#page-header {
+		padding-top: 5px;
+		padding-bottom: 0;
+	}
+	
+	#page-header-content {
+		box-sizing: border-box;
+		padding: 0;
+	}
+    
+    #page-header-content-logo {
+        .flex-forced-width(@mdl-layout2-left-width);
+    }
+    
+	
+	#page-header-content-logo #subtitle {
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
+
+	#page-navbar {
+		margin-top: 15px;
+	}
+    
+    #socialicons {
+		padding-right: 20px;
+		text-align: right;
+    }
+	
+	#page-navigation {
+		padding-right: 20px;
+		text-align: right;
+	}
+    
+
+    //Pre and content:
+    #block-region-side-pre {
+        .flex-forced-width(@mdl-layout2-left-width);
+    }
+	
+	//This part is for re-ordering pages for small devices
+	@media only screen and (max-width: @mdl-maxwidth-singlecolumn), only screen and (max-device-width: @mdl-maxwidth-singlecolumn){
+        #page-header-content {
+			.flex-grid-horizontal-wrap();
+            
+            #page-header-content-logo {
+                text-align: center;
+                margin-bottom: 10px;
+                
+                a {
+                    float: none;
+                }
+            }
+            
+            #page-navigation {
+                text-align: center;
+            }
+        }
+        
+        #page-header-content-logo #subtitle {
+            margin: 0;
+        }
+        
+		#pre-and-content{
+			.flex-grid-horizontal-wrap();
+		}
+        
+        #block-region-side-pre {
+            margin-top: 0;
+            border-radius: 0;
+            padding: 0;
+            
+            border-top: @mdl-border-width solid @mdl-main-region-border;
+            border-left: @mdl-border-width solid @mdl-main-region-border;
+            border-right: @mdl-border-width solid @mdl-main-region-border;
+        }
+        
+        #navigationAccordionNav {
+            border-bottom: @mdl-border-width solid @mdl-main-region-border;
+        }
+        
+        #navigationAccordion {
+            display: none;/* Initially hidden */
+            padding: 5px;
+        }
+	}
+    
+    @media only screen and (min-width: @breakpoint-xlarge){
+        //Content and post-content separation
+        .content + .post-content {
+            padding-left: 10px;
+        }
+    }
+}
+
+
+
+////
+// Main page sections styles, boxes and borders
+////
+#page-navbar {
+	.uk-overflow-container();
+
+	background-color: @mdl-page-navbar-background;
+	border-top: @mdl-border-width solid @mdl-main-region-border;
+	border-left: @mdl-border-width solid @mdl-main-region-border;
+	border-right: @mdl-border-width solid @mdl-main-region-border;
+	border-bottom: @mdl-border-width solid @mdl-page-navbar-border;
+
+	border-top-left-radius: @mdl-border-radius;
+	border-top-right-radius: @mdl-border-radius;
+
+	margin-top: 0;
+
+	.box-sizing(border-box);
+
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 0;
+	padding-bottom: 0;
+
+	.clearfix;
+	
+	.breadcrumb-nav {
+		margin-bottom: 0;
+	}
+	
+	.uk-breadcrumb {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+}
+
+#page-breadcrumbs {
+    .uk-overflow-container();
+    
+    margin-top: 0;
+
+	.box-sizing(border-box);
+    
+    background-color: @mdl-page-breadcrumbs-background;
+    border-left: @mdl-border-width solid @mdl-main-region-border;
+	border-right: @mdl-border-width solid @mdl-main-region-border;
+	border-bottom: @mdl-border-width solid @mdl-page-breadcrumbs-border;
+    
+    padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 0;
+	padding-bottom: 0;
+    
+    .breadcrumb-nav {
+        margin-bottom: 0;
+    }
+
+    .uk-breadcrumb {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.content-pre {
+	.box-sizing(border-box);
+	padding-right: 5px;
+}
+
+/*
+ * Main page content:
+ */
+#main-content-box {
+    .uk-overflow-container();
+    
+    background-color: @mdl-main-region-background;
+    border-left: @mdl-border-width solid @mdl-main-region-border;
+    border-right: @mdl-border-width solid @mdl-main-region-border;
+    border-bottom: @mdl-border-width solid @mdl-main-region-border;
+    
+    border-bottom-left-radius: @mdl-border-radius;
+    border-bottom-right-radius: @mdl-border-radius;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	
+    
+	.box-sizing(border-box);
+    padding: @mdl-main-region-padding;
+    .clearfix;
+}
+
+
+//Add top border to top main region depending on breadcrumbs placement and visibility:
+body.layout1 {
+    &.layout-option-nobreadcrumbs #main-content-box,
+    &.nopagenavbar #page-breadcrumbs {
+        border-top: @mdl-border-width solid @mdl-main-region-border;
+        border-top-left-radius: @mdl-border-radius;
+        border-top-right-radius: @mdl-border-radius;
+    }
+}
+
+body.layout2 {
+    
+    &.layout-option-nobreadcrumbs,
+    &.nopagenavbar {
+        
+        #page-breadcrumbs {
+            border-top: @mdl-border-width solid @mdl-main-region-border;
+            border-top-left-radius: @mdl-border-radius;
+            border-top-right-radius: @mdl-border-radius;
+        }
+        
+        @media only screen and (max-width: @mdl-maxwidth-singlecolumn), only screen and (max-device-width: @mdl-maxwidth-singlecolumn){
+            #block-region-side-pre, .content-pre {
+                border-top: @mdl-border-width solid @mdl-main-region-border;
+                border-top-left-radius: @mdl-border-radius;
+                border-top-right-radius: @mdl-border-radius;
+            }
+            
+            #page-breadcrumbs {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+        }
+    }
+    
+}
+
+body.layout1, body.layout2 {
+    .page-login {
+        #region-main, layout-option-nobreadcrumbs #region-main {
+            border: none;
+        }
+
+        #main-content-box {
+            border-top-left-radius: @mdl-border-radius;
+            border-top-right-radius: @mdl-border-radius;
+        }
+    }
+}
+
+/* Footer */
+
+#page-footer {
+    .box-sizing(border-box);
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    text-align: left;
+	
+	.page-footer-background (default) when (alpha(@mdl-page-footer-background) > 0) {
+		background: @mdl-page-footer-background;
+	}
+
+	.page-footer-background (almost-flat) when (alpha(@mdl-page-footer-background) > 0) {
+		background: @mdl-page-footer-background;
+	}
+
+	.page-footer-background (gradient) when ((alpha(@mdl-page-footer-background-gradient-top) + alpha(@mdl-page-footer-background-gradient-bottom)) > 0) {
+		background-image: -webkit-linear-gradient(top, @mdl-page-footer-background-gradient-top, @mdl-page-footer-background-gradient-bottom);
+		background-image: linear-gradient(to bottom, @mdl-page-footer-background-gradient-top, @mdl-page-footer-background-gradient-bottom);
+	}
+	
+	.page-footer-background(@uikit-theme);
+    
+    .copy {
+        margin-top: 0px;
+        padding-left: 20px;
+        float: left;
+    }
+
+    .footimage {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    
+    .footnote {
+        text-align: center;
+        color: @global-muted-color;
+        
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+    
+    .helplink {
+        margin-top: 0px;
+        float: right;
+        padding-right: 20px;
+    }
+}

@@ -1,0 +1,14 @@
+2012-03-08 - MCoyles
+	Moved main config options into Moodle 2.2 Block Settings.
+	Rewritten for Moodle 2.2
+	
+2008/09/10 - GThomas
+    Replaced $facilityData global variable with fdata.
+    Replaced $cfg global variable with property of Moodle config - $CFG->mis.
+    Added https config option.
+    Added blockwww property to tab
+    Tabs now have title component used on each tab - this is important because you might have a class 'tab_profile' but actually want to title it 'account info'
+
+2008/07/02 - GThomas
+    Removed all use of $SESSION and replaced with native Moodle session handling ($USER->)
+    Modified base tab class to provide current students user record and id as a property

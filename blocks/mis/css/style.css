@@ -1,0 +1,843 @@
+
+/*********** Default Ajax Loader *********/
+.ajaxloading {
+    text-align:left;
+    min-height:20px;
+	background-image: url('../pix/ajax_loading.gif');
+    background-repeat:no-repeat;
+    background-position:20px 20px;
+    padding:20px 20px 20px 40px;
+	margin: 0 auto;
+	min-width: 20px;
+}
+/********* Default Ajax Loader ***********/
+
+#mis_loadingstatus{
+    margin:0 auto;
+    border:1px solid #0af;
+    width:200px;
+}
+
+/********* MIS ***********/
+#misMain{
+
+}
+
+.mis_welcome{
+    text-align:center;
+}
+
+fieldset{
+	margin:15px;
+}
+
+div.logo{
+	margin-left: 10px;
+	margin-top: 4px;
+    margin-bottom:-8px;
+}
+
+div.mis_title{
+    background-image: url('../pix/bottommid.gif');
+    width:auto;
+    min-height:20px;
+    color:#fff;
+    font-weight:bold;
+}
+
+div.mis_tip{
+    font-size:11pt;
+    font-weight:bold;
+}
+
+/********* MIS ***********/
+
+
+
+
+
+/********* Timetable ************/
+.timetable{
+position:relative;
+width:100%;
+min-height:40px;
+background-color:#ccc;
+border:1px solid #ddd;
+}
+
+.timetable .unit{
+position:relative;
+min-height:20pt;
+float:left;
+font-size:1em;
+}
+
+.timetable .event{
+    cursor:pointer;
+}
+
+.timetable .event:hover{
+    background-color:#ffd;
+    opacity: .99;
+    filter: alpha(opacity=99);
+}
+
+.timetable .timespan{
+position:absolute;
+height:3px;
+line-height:1px;
+font-size:1px;
+background-color:#0a0;
+border-left:1px solid #ddd;
+margin-left:-1px;
+}
+
+.timetable  .unit .inner{
+min-height:20pt;
+padding:0 4px 0 4px;
+border-left:1px solid #000;
+}
+
+
+.timeline{
+position:relative;
+float:left;
+width:90%;
+min-height:16pt;
+font-size:11pt;
+background-color:#ff9;
+border-bottom:1px solid #ccc;
+}
+
+.timeline .unit{
+min-height:16pt;
+}
+
+.timeline .unit .inner{
+min-height:16pt;
+}
+
+.daycell{
+position:relative;
+width:10%;
+min-height:14pt;
+float:left;
+text-align:left;
+}
+
+.daycellhead{
+background-color:#75ACE3;
+min-height:16pt;
+font-size:11pt;
+}
+
+.daycellhead .daycellinner{
+margin:2px 2px 2px 2px;
+}
+
+.daycellinner{
+margin:8px 4px 2px 4px;
+font-size:11pt;
+}
+
+.daycellinner .date{
+font-size:9pt;
+}
+
+.timetable .dayrow .daycell {
+min-height:55pt;
+}
+
+.timetable .staggered .dayrow .daycell {
+min-height:100pt;
+}
+
+.timetable .r0 .daycell {
+background-color:#def;
+}
+
+.timetable .r1 .daycell {
+background-color:#ace;
+}
+
+.timetable .daycellinner .day{
+font-weight:bold;
+}
+
+.timetable .dayrowevents{
+position:relative;
+float:left;
+width:90%;
+min-height:55pt;
+text-align:left;
+}
+
+.timetable .eventlane0, .timetable .eventlane1{
+position:relative;
+clear:both;
+width:100%;
+min-height:50pt;
+}
+
+.timetable .unitabs{
+position:absolute !important;
+margin-top:2px;
+}
+
+.timeline .unitmark{
+position:absolute;
+width:2px;
+height:6px;
+border-left:1px solid black;
+}
+
+.dayrowevents .unit{
+background-color:#fff;
+opacity: .85;
+filter: alpha(opacity=85);
+}
+
+.dayrowevents  .unit .inner{
+position:relaitve;
+min-height:40pt;
+padding:0 4px 0 4px;
+border-left:1px solid #aaa;
+font-size:9pt;
+}
+
+.timetable  .unit .inner .from{
+float:left;
+}
+
+.timetable  .unit .inner .until{
+float:right;
+}
+
+.timetable .dayrow{
+text-align:left;
+clear:both;
+width:100%;
+min-height:55pt;
+}
+
+.staggered .dayrow{
+min-height:100pt;
+}
+
+.timetable .evtime{
+color:#070;
+}
+
+.timetable .module{
+color:#987e06;
+}
+
+.timetable .room{
+color:#00f;
+}
+
+.timetable .lecturer{
+color:#c000c0;
+}
+
+/* Alternate rows even */
+.timetable .r0 {  
+background-color:#eaeaea !important;
+}
+
+/* Alternate rows odd */
+.timetable .r1 {
+background-color:#dadada !important;
+}
+
+/*******************************/
+
+/************* Blocks *************/
+div.mis_title{
+      min-height:20px;
+     font-weight:bold;
+    text-align: left;
+}
+ 
+div.mis_tip{
+    font-size:11pt;
+    font-weight:bold;
+}
+
+
+/************* Blocks *************/
+
+/************* Debug *************/
+.debug_error{
+font-weight:bold;
+color:red;
+}
+
+.debug_success{
+font-weight:bold;
+color:green;
+}
+/************* Debug *************/
+
+/************* Attendance *************/
+#calendar {
+	width: 100%;
+	height: 100%;
+}
+
+.cal {
+	width: 100%; 
+}
+
+.cal tr, .cal td {
+    border:1px solid #ccc;
+}
+
+.cal .calhead {
+	height: 24px;
+	width: 100%;
+	font-weight: bold;
+	color:white;
+	background: url('../pix/bottommid.gif');
+	font-size: 15px;
+}
+
+.cal .calhead, .cal .calhead tr, .cal .calhead td{
+    border-style:none;
+}
+
+.cal .calhead img {
+	border: none;
+}
+
+.attTable .dayhead, .cal .dayhead{
+	min-height: 24px;
+	background: #eee;
+}
+
+.attTable .dayhead td,  .cal .dayhead td{
+	text-align: center;
+	color: #000;
+	background: url('../pix/headbackon.gif');
+	border: 1px solid #aaa;
+}
+
+.cal .dayrow {
+	text-align: right;    
+}
+
+.cal .dayrow td {
+	width: 61px;
+	color: #000;
+	font-size: .7em;
+	height:40px;
+}
+
+.cal td.day {
+	text-align: right;
+	font-weight: bold;
+	background-color:#F4F4F4;
+}
+
+
+.cal .dayover {
+	background: #EEE;
+	font-size: .7em;
+	width: 61px;
+}
+
+.cal .dayout {
+	background: #FFF;
+	font-size: .7em;
+	width: 61px;
+}
+
+
+.cal td.header, {
+	border: 1px solid black;
+	background: url('../pix/bottommid.gif');
+	color:white;
+}
+
+.cal table.week{
+	border: 1px solid #aaa;
+	border-collapse: collapse;
+	width: 400px;
+}
+
+table.attTable{
+	border: 1px solid #aaa;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+
+td.attData , #lunch{
+	border: 1px solid #aaa;
+}
+
+.cal td.datecol{
+	border: 1px solid #aaa;
+	background-color: #D8ECF6;
+	text-align: center;
+}
+
+.cal td.lunch{
+	background-color: #D8ECF6;
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+	text-align: center;
+	font: normal normal bold x-small/normal Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.cal div.Present, .cal div.A, .cal div.L  {
+    height:50%;
+}
+
+.cal div.holidays, .cal div.weekend, .cal div.noday{
+    height:100%;
+}
+
+.cal div.Present{
+	text-align: right;
+	background-color: #66FF66;
+}
+
+
+
+
+.cal div.A{
+	text-align: right;
+	background-color: #FF6666;
+}
+.attTable tr.A{
+	text-align: center;
+	background-color: #FFCCCC;
+}
+
+.cal div.L{
+	text-align: right;
+	background-color: #FFFF99;
+}
+
+.attTable tr.L{
+	text-align: center;
+	background-color: #FFFF99;
+}
+
+.cal div.holidays{
+	text-align: right;
+	background-color: #95BFFF;
+}
+
+.cal div.weekend{
+	text-align: right;
+	background-color: #add;
+}
+
+table.cal  tbody tr td div.weekend{
+    color:#000 !important;
+}
+
+.cal .day_today {
+    color:#900;    
+}
+
+.cal div.noday{
+	text-align: right;
+	background-color: #ccc;
+}
+
+.cal td.yearComplete{
+	width: 20%;
+	background: url('../pix/bottommid.gif');
+	text-align: center;
+	border-left-style: solid;
+	border-left-width: 1;
+	border-right-style:solid;
+	border-right-width: 1;
+	color: White;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: small;
+	
+}
+
+.cal td.yearIncomplete{
+	width: 20%;
+	background-color: #E6E6E6;
+	text-align: center;
+	border-left-style: solid;
+	border-left-width: 1;
+	border-right-style:solid;
+	border-right-width: 1;
+	color: White;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: small;
+}
+
+.cal div.imggraph h1{
+font-size:14pt;
+}
+
+.cal div.imggraph h2{
+font-size:12pt;
+font-weight:bold;
+}
+
+.cal div.imggraph h3{
+font-size:11pt;
+font-weight:bold;
+}
+
+#graph{
+	margin-left: 30px;
+}
+*/
+/************* Attendance *************/
+
+/************* Assessment *************/
+#misMain label {
+    font-weight:bold;
+    margin-right:4px;
+}
+
+
+#misMain .rowalt0{
+    background-color:#fff;
+}
+#misMain .rowalt1{
+    background-color:#f4f4f4;
+}
+
+.examdata{
+    overflow:auto;
+}
+
+.examdata table, .examdata table tr, .examdata table tr td, .examdata table tr th{
+    font-family:verdana, arial, tahoma, serif;
+    font-size:9pt;
+    border-collapse:collapse;
+    border:1px solid #bbb;  
+}
+
+.examdata table tr th{
+    background-color:#2A55FF;
+    color:#fff;
+}
+
+.examdata table tr td, .examdata table tr th{
+    padding:0.5em 0.5em 0.5em 0.5em;
+}
+
+.examdata table caption{
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+
+#manageassessments{
+    margin-left:0px;
+    padding-left:0px;
+    list-style-type: none;
+}
+
+#manageassessments li{
+    display:block;
+    position:relative;        
+    list-style-type: none;
+}
+
+#manageassessments a{
+    background-position:top left;
+    background-repeat:no-repeat;
+    padding:2px 2px 2px 20px;
+    cursor:pointer;
+}
+
+#manageassessments li{
+    margin-top:4px;
+    margin-bottom:4px;
+}
+
+#manageassessments li input{
+    margin:0px 2px 0px 2px;
+}
+
+#manageassessments li label{
+    margin:0px 0px 0px 4px;
+    color:#00a;
+    font-weight:bold;
+}
+
+#manageassessments a.collapsed{
+    background-image: url('../pix/node-cls.gif');   
+}
+
+#manageassessments a.expanded{
+    background-image: url('../pix/node-exp.gif');   
+}
+
+#manageassessments ul.assessmentlist, #manageassessments ul.assbranch, #manageassessments ul.critbranch, #manageassessments ul.examsbranch, #manageassessments ul.exambranch{
+    min-height:20px;
+}
+
+
+#studentexams{
+    margin-left:0px;
+    padding-left:0px;
+    list-style-type: none;
+}
+
+#studentexams li{
+    display:block;
+    position:relative;    
+    padding:2px 2px 2px 2px;
+    list-style-type: none;
+}
+
+
+#studentexams li ul li.examdata{
+    display:block;
+    position:relative;
+    border-top:2px solid #ccc;
+    margin-top:4px;
+    margin-bottom:8px;
+    padding:2px 2px 2px 2px;
+    list-style-type: none;
+}
+
+.clickhandle{
+    background-repeat:no-repeat;
+    cursor:pointer;
+    padding-left:20px;
+    min-width:20px;
+}
+
+#studentexams span.collapsed{    
+    background-image: url('../pix/node-cls.gif');   
+}
+
+#studentexams span.expanded{    
+    background-image: url('../pix/node-exp.gif');   
+}
+
+a.fileLink{
+padding-left:20px;
+padding-top:4px;
+background-position:0px;
+background-repeat:no-repeat;
+}
+
+a.ext_xls{
+background-image:url('../pix/file_xls.png');
+}
+/************* Assessment *************/
+
+/************* Profile *************/
+#mis_profileview{
+border:1px solid #eee;
+width:100%; height:400px
+}
+/************* Profile *************/
+
+
+/************* Timetable *************/
+#mis_ttTable1{
+	margin: 10px;
+	width:97%;
+}
+
+#mis_ttTable2{
+	margin: 10px;
+	width:97%;
+}
+
+
+td.ttperiod{
+	text-align: center;
+	width: 15%
+}
+
+td.ttreg{
+	width: 70px;
+	text-align: center;
+}
+
+td.ttbreak{
+	background-color: #D8ECF6;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	width: 30px;
+}
+
+td.ttlunch{
+	background-color: #D8ECF6;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	width: 30px;
+}
+
+table.tt{
+	margin:5px;
+	width: 97%;
+}
+/************* Timetable *************/
+
+
+div.help_icon{
+	width: 30px;
+	white-space:nowrap;
+	display:inline; 
+}
+
+#mis_attGraph_title{
+	padding-left: 30px;
+}
+
+table.layout{
+	padding-left: 30px;
+	padding-right: 40px;
+	width: 100%;
+}
+
+td.topcol{
+	text-align: center;
+}
+
+td.leftcol{
+	width: 50%;
+	vertical-align:top;
+}
+
+td.rightcol{
+	width: 50%;
+	vertical-align:top;
+}
+
+table.stuDetails{
+	width: 90%;
+}
+
+td.label{
+	font-weight: bold;
+}
+
+/* GT MOD - Don't use tables for layout */
+/* THIS GOES ROUND THE OUTSIDE OF THE BLOCK */
+div.mis_block_wrapper{
+    position:relative; /* GT MOD 2008/07/09*/
+    background-image:url(../pix/shadow.png);
+    background-repeat:no-repeat;
+    background-position:bottom right; 
+}
+
+div.mis_block{   
+	position:relative;
+    border:1px solid #ddd;
+    background-color:#fff;    
+    margin:4px 4px 4px 4px;
+   
+}
+
+
+div.mis_block .header{
+    font-weight:bold;
+    padding:4px 4px 4px 4px;
+}
+
+.blockcontainer  .mis_blockcol{
+    position:relative;
+    width:50%;
+    float:left;
+}
+
+.blockcontainer  .mis_block{
+    min-height:200px;
+    margin: 8px 4px 8px 4px;
+}
+
+.blockcontainer{
+position:relative;
+margin:0px auto;
+width: 99%;
+}
+
+table.layout div.mis_title{
+	height: 20px;
+	width:100%;
+	background-image: url('../pix/bottommid.gif');
+	color: white;
+	vertical-align: middle;
+}
+#misblock_personal{
+	padding: 10px;
+}
+
+div.newlabel{
+	padding:10px 10px 10px 10px; 
+	font-weight: bold;
+}	
+
+div.imggraph{
+	text-align: center;
+}
+
+div.dataContainer{
+	margin-left: 80px;
+}
+
+table.letters{
+	margin-left: 10px;
+	width: 100%;
+}
+
+td.letter{
+
+	background:#FFFFFF url(../pix/letter.gif) no-repeat scroll 0% 50%;
+	height:34px;
+	padding-left:28px;
+}
+
+
+
+div.notifications{
+	width: 100%;
+	height: 40px;
+	margin: 3px;
+}
+
+div.nwarning{
+	border: 1px solid red;
+	background: #FFA8A8 url(../pix/warning.gif) no-repeat scroll 0% 50%;
+	height:34px;
+	vertical-align: middle;
+	padding-left:38px;
+	margin: 1px;
+}
+
+div.nmessage{
+	border: 1px solid blue;
+	background: #CCEBFF url(../pix/message.gif) no-repeat scroll 0% 50%;
+	height:34px;
+	vertical-align: middle;
+	padding-left:38px;
+	margin: 1px;
+}
+
+div.ninfo{
+	border: 1px solid orange;
+	background: #FFFF99 url(../pix/info.gif) no-repeat scroll 0% 50%;
+	height:34px;
+	vertical-align: middle;
+	padding-left:38px;
+	margin: 1px;
+}
+
+#block_mis_wrapper{
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+}
+

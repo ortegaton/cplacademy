@@ -1,0 +1,21 @@
+.mform .fitem .felement
+{
+    width: 100%;
+    margin-left: 0;
+}
+
+.mform .fitem {
+margin: 0;
+}
+
+
+.mform fieldset div
+{
+    margin: 0;
+}
+
+.mform fieldset
+{
+    margin: 0;
+    padding: 0;
+}

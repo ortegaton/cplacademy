@@ -1,0 +1,111 @@
+.generaltable .below .cell{
+    
+    background-color: #FF0000;
+}
+
+.generaltable .level .cell{
+    
+    background-color: #00FF00;
+}
+
+.generaltable .above .cell{
+    
+    color: #FFFFFF;
+    background-color: #000066;
+}
+
+td .below .cell{
+    
+    background-color: #FF0000;
+}
+
+td .level .cell{
+    
+    background-color: #00FF00;
+}
+
+td .above .cell{
+    
+    color: #FFFFFF;
+    background-color: #000066;
+}
+
+
+
+.cell .c0 {
+    text-align: left;
+    
+}
+
+.cell 
+{
+    text-align: center;
+}
+
+.cell a {
+    color: #000000;
+}
+
+.cell a:hover {
+    color: #000000;
+    text-decoration:none;
+}
+
+.tableleft
+{
+    float: left;
+    margin-left: 5%;
+}
+
+.online_reporting
+{
+    margin-left: 5%;
+}
+
+.cell
+{
+    vertical-align:middle;
+}
+
+.zilink_onlinereporting_table
+{
+    float: left;
+}
+
+.zilink_onlinereporting_table_small_left
+{
+    float: left;
+    position: absolute;
+}
+
+.zilink_onlinereporting_table_small_right
+{
+    float: right;
+}
+
+.rotate{
+    
+    float:left;
+    text-align: center;
+    margin-left: 130px;
+    height:300px;
+    -webkit-transform: rotate(270deg);    
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.zilink_chart {
+    
+    margin: 10px 0px 10px 40px;
+    width: 600px; 
+    height: 300px; 
+}
+
+.zilink_table_width {
+    
+    border: 0px;
+    width: 68%;
+    min-width: 700px;
+}
