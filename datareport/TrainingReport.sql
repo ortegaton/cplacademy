@@ -1,3 +1,4 @@
+-- 10 March 2016: filter courses without number, match with year and month
 (SELECT 
 cn.year as 'Year',
 cn.number as 'UniqueNum', 
